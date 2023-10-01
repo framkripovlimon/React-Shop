@@ -113,7 +113,6 @@ const Shop = () => {
 		const newOrder = order.map(el => {
 			if (el.mainId === itemId) {
 				const newQuantity = el.quantity - 1;
-				console.log(newQuantity)
 				return {
 					...el,
 					quantity: newQuantity > 0 ? newQuantity : 0,
